@@ -26,8 +26,9 @@ const app = express();
 
 app.use(
   cors({
-    credentials: true,
-    origin: ["http://localhost:3000", "https://distracted-noyce-fee0e2.netlify.com"] //Swap this with the client url 
+    credentials: true, 
+    //below tells you where your client is 
+    origin: ["http://localhost:3000", "https://determined-neumann-baff56.netlify.com"] //Swap this with the client url 
   })
 );
 

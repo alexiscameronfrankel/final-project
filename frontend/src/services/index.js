@@ -2,8 +2,8 @@ import axios from 'axios';
 let baseURL;
 
 process.env.NODE_ENV === 'production'
-  //? (baseURL = 'here should be your production endpoint')
-  ? (baseURL = window.location.origin)
+  //? (baseURL = 'here should be your production endpoint') below tells you where server is
+  ? (baseURL = "https://an-app-name.herokuapp.com")
   : (baseURL = 'http://localhost:5000');
 
 const service = axios.create({ withCredentials: true, baseURL });
